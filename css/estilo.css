@@ -1,0 +1,110 @@
+/*
+Grid layout:
+
+É bimensional.
+Divisão de toda a página em linhas e colunas.
+Coocar elementos onde quiser nessa divisão.
+
+Grid ou Flexbox?
+
+- Grind: Duas dimensões (Colunas e linhas)
+- Flexbox: Uma dimensão (Coluna ou Linha)
+
+Um complenta o trabalho do outro.
+Ou seja da pra utilizar os dois.
+
+
+### Propriedades ###
+
+container e item(s)
+
+ ----- No container -----:
+
+ - display: grid; - fala que o nosso container é um grid
+ - grid-template-columns; - vai fatiar as nossas colunas, vai dizer quantas colunas o grid possui.
+ - grid-template-rows; - quantas linhas
+ - grid-gap; sobre nossos espaçamentos
+    - grid-row-gap; -- podemos fazer espaçamentos nas nossas linhas
+    - grid-column-gap; --  e nas nossas colunas.
+ - grid-template-areas; -- delimitar as nossas áreas.
+
+ e mais 4 propriedades e alinhamentos que vamos ver.
+
+ ============================================================================
+
+ ----- Nos Itens ou Elementos ----- 
+
+ - grid-column - vai dizer onde o nosso item vai ficar na coluna que fatiamos.
+    -grid-column-start;  - 
+    -grid-column-end;
+ - grid-row - onde vai ficar na nossa linha
+    - grid-row-start;
+    - grid-row-end;
+ - grid-area - onde ficará na nossa área
+
+ e mais 2 propriedades de alinhamento que vamos ver.
+
+ =====================================================
+
+#GRID ALINHAMENTO:
+
+Existem 6 propriedades para alinhamento:
+
+1 justify-content
+2 align-content
+3 justify-items
+4 align-items
+5 justify-self
+6 align-self
+
+####justify e align####
+justify alinha na horizontal e o align na vertical
+
+----> CONTENT:
+
+
+
+
+*/
+
+/*
+
+html, body{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: #7159c1;
+}
+
+header{
+   background-color: yellow;
+   grid-area: header;
+}
+
+main{
+   background-color: blue;
+   grid-area: main;
+}
+
+aside{
+   background-color: green;
+   grid-area: aside;
+}
+
+footer{
+   background-color: red;
+   grid-area: footer;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: 3fr 1fr;  
+   grid-template-rows: 20vh 70vh 10vh;
+   grid-template-areas: "header header"
+                        "main aside"
+                        "footer footer"
+   ;
+
+}
+
+*/
